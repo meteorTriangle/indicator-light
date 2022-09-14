@@ -54,24 +54,23 @@ void setup()
 
 void loop()
 {
-    digitalWrite(Power_LED, 0);
 	bool EMS_state = digitalRead(EMS_pin) ^ EMS_contact;
     if (EMS_state) {
-	    pinMode(Power_LED, INPUT );
-        digitalWrite(Action_LED, 1);
-        digitalWrite(EMS_LED, 0);
+        digitalWrite(Power_LED, 0);
+        digitalWrite(Action_LED, 0);
+        digitalWrite(EMS_LED, 1);
     }
     else {
         bool ACT_state = digitalRead(ACT_pin) ^ Action_logic;
         if(ACT_state) {
-	        pinMode(Power_LED, INPUT );
-            digitalWrite(Action_LED, 0);
-            digitalWrite(EMS_LED, 1);
+            digitalWrite(Power_LED, 0);
+            digitalWrite(Action_LED, 1);
+            digitalWrite(EMS_LED, 0);
         }
         else{
-	        pinMode(Power_LED, OUTPUT );
-            digitalWrite(Action_LED, 1);
-            digitalWrite(EMS_LED, 1);
+            digitalWrite(Power_LED, 1);
+            digitalWrite(Action_LED, 0);
+            digitalWrite(EMS_LED, 0);
         }
     }
 }

@@ -24,24 +24,23 @@ void setup()
 
 void loop()
 {
-    digitalWrite(2, 0);
  bool EMS_state = digitalRead(3) ^ 0;
     if (EMS_state) {
-     pinMode(2, 0x0 );
-        digitalWrite(1, 1);
-        digitalWrite(0, 0);
+        digitalWrite(2, 0);
+        digitalWrite(1, 0);
+        digitalWrite(0, 1);
     }
     else {
         bool ACT_state = digitalRead(4) ^ 1;
         if(ACT_state) {
-         pinMode(2, 0x0 );
-            digitalWrite(1, 0);
-            digitalWrite(0, 1);
+            digitalWrite(2, 0);
+            digitalWrite(1, 1);
+            digitalWrite(0, 0);
         }
         else{
-         pinMode(2, 0x1 );
-            digitalWrite(1, 1);
-            digitalWrite(0, 1);
+            digitalWrite(2, 1);
+            digitalWrite(1, 0);
+            digitalWrite(0, 0);
         }
     }
 }
