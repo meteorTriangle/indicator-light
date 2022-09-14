@@ -1,0 +1,17 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\robot\\AppData\\Local\\Arduino15\\packages\\ATTinyCore\\hardware\\avr\\1.4.1\\cores\\tiny"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\robot\\AppData\\Local\\Arduino15\\packages\\ATTinyCore\\hardware\\avr\\1.4.1\\variants\\tinyX5"
+  },
+  {
+    "Sourcefile": "c:\\Users\\robot\\Desktop\\state_LED\\build\\sketch\\State_LED.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]

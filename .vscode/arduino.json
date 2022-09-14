@@ -1,0 +1,8 @@
+{
+    "sketch": "State_LED.ino",
+    "output": "build",
+    "configuration": "LTO=enable,TimerClockSource=default,chip=85,clock=128internal,eesave=aenable,bod=disable,millis=disabled",
+    "board": "ATTinyCore:avr:attinyx5",
+    "programmer": "ATTinyCore:arduinoasisp",
+    "port": "COM9"
+}
